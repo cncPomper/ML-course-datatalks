@@ -1,16 +1,17 @@
 [tool.poetry]
-name = "machine-learning"
+name = "machine-learning_project-project"
 version = "1.0.0"
 description = "Machine learning practising"
 authors = ["Piotr Kitlowski <piotr.kitlowski@gmail.com>"]
 license = "MIT"
 readme = "pypi_description.md"
 packages = [
-    { include = "machine_learning" }
+    { include = "machine_learning_project" }
 ]
 
 [tool.poetry.dependencies]
 python = "^3.12"
+uv = "*"
 
 
 [tool.poetry.dev-dependencies]
