@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "machine-learning_project-project"
+version = "1.0.0"
+description = "Machine learning practising"
+authors = ["Piotr Kitlowski <piotr.kitlowski@gmail.com>"]
+license = "MIT"
+readme = "pypi_description.md"
+packages = [
+    { include = "machine_learning_project" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+uv = "*"
+
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+line_length = 120
+
+[tool.black]
+line_length = 120
