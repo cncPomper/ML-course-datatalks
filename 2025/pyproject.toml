@@ -12,6 +12,11 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.12"
 uv = "*"
+scikit-learn = "1.6.1"
+poetry = "*"
+uvicorn = { extras = ["standard"], version = "*" }
+fastapi = "*"
+requests = "*"
 
 
 [tool.poetry.dev-dependencies]
