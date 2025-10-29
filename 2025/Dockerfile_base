@@ -1,0 +1,22 @@
+FROM agrigorev/zoomcamp-model:2025
+
+ENV POETRY_VIRTUALENVS_CREATE=false \
+    POETRY_NO_INTERACTION=1
+
+RUN pip install poetry
+
+WORKDIR /app
+
+COPY ["pyproject.toml", "poetry.lock", "pypi_description.md", "./"]
+
+WORKDIR /app/machine_learning_project
+
+COPY ["/machine_learning_project/", "./"]
+
+RUN poetry install
+
+COPY . /app/
+
+EXPOSE 8000
+
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
