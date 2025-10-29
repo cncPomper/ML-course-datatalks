@@ -1,5 +1,11 @@
 # Conf
 
+With `wget`:
+
+```bash
+wget https://github.com/DataTalksClub/machine-learning-zoomcamp/raw/refs/heads/master/cohorts/2025/05-deployment/pipeline_v1.bin
+```
+
 ```bash
 conda create -n ml python=3.12
 conda activate ml
