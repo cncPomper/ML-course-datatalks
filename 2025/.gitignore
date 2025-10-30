@@ -84,3 +84,4 @@ docs/_build/
 .env*
 
 *.lock
+*.bin
