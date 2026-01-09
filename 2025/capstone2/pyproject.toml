@@ -1,9 +1,9 @@
 [project]
-name = "capstone1"
+name = "capstone2"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "jupyter>=1.1.1",
     "matplotlib>=3.10.8",
@@ -11,4 +11,7 @@ dependencies = [
     "pandas>=2.3.3",
     "scikit-learn>=1.8.0",
     "seaborn>=0.13.2",
+    "skl2onnx>=1.19.0",  # --- IGNORE ---
+    "onnx>=1.15.2",  # --- IGNORE ---
+    "onnxruntime>=1.15.1"  # --- IGNORE ---
 ]
